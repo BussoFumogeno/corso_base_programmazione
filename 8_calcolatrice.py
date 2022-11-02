@@ -1,22 +1,21 @@
 a = int(input("inserisci numero: "))
 b = int(input("inserisci numero: "))
-c = int(input("inserisci numero: "))
+segno = int(input("inserisci il segno: "))
 
-if (c==1):
+if (segno==1):
     print (a+b)
 
-if (c==2):
+if (segno==2):
     print (a-b)
 
-if (c==3):
-    print (a/b)
+if (segno==3):
     if (b==0):
         print ("errore")
-        if (a==0):
-            print ("errore")
+    else: 
+        print(a/b)
 
-if (c==4):
+if (segno==4):
     print (a*b)
 
-if (c==5):
+if (segno==5):
     print (a+b)
