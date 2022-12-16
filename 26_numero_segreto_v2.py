@@ -1,24 +1,30 @@
-i = 0
-numero_segreto = 7
+i = 1
+differenza = 0
+ns = 33
 while True:
-    n = int(input("indovina il numero segreto: "))
-    if (n - numero_segreto >= 20):
-        print("acqua")
-
-    if (n - numero_segreto > 10 ):
-        if (n - numero_segreto < 20):
+    n = int(input("inserisci un numero: "))
+    if (ns == n):
+        break
+        
+    if (n > ns):
+            print ("piu piccolo")
+            differenza = n - ns
+            if ( n < ns ):
+                print ("piu grande")
+                differenza = ns -n
+    if (differenza>20):
+        print ("acqua")
+        
+    if (10 < differenza):
+        if(differenza < 20):
             print ("fuochino")
+    
+    if (10 > differenza ):
+        print ("fuoco")
 
-    if (n - numero_segreto <= 10):
-        print("fuoco")
     
     i = i + 1
     
-    if (n == numero_segreto):   
-       break
-
-    
-
 print (i)
-
+print ("hai indovinato congratulazioni")
 
